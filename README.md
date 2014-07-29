@@ -1,4 +1,4 @@
-docker-apache-php
+apache-php
 ===================================
 
 A Docker image based on Ubuntu, serving PHP running as Apache Module. Useful for Web developers in need for a fixed PHP version.
@@ -7,6 +7,7 @@ Tags
 -----
 
 * 5.3.10: Ubuntu 12.04 (LTS), Apache 2.2, PHP 5.3.10
+* 5.5.9: Ubuntu 14.04 (LTS), Apache 2.4, PHP 5.5.9
 
 Usage
 ------
