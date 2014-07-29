@@ -1,19 +1,24 @@
-docker-ubuntu12.04-apache2.2-php5.3
+docker-apache-php
 ===================================
 
-A Docker image based on Ubuntu 12.04, Apache 2.2, PHP 5.3 with some modules.
+A Docker image based on Ubuntu, serving PHP running as Apache Module. Useful for Web developers in need for a fixed PHP version.
+
+Tags
+-----
+
+* 5.3.10: Ubuntu 12.04 (LTS), Apache 2.2, PHP 5.3.10
 
 Usage
 ------
 
 ```
-docker run -d -P bylexus/ubuntu12.04-apache2.2-php5.3
+docker run -d -P bylexus/docker-apache-php
 ```
 
 A bit more specific:
 
 ```
-docker run -d -p 8080:80 -p 2022:22 -v /home/user/webroot:/var/www -e SERVER_PASSWORD=ubuntu bylexus/ubuntu12.04-apache2.2-php5.3
+docker run -d -p 8080:80 -p 2022:22 -v /home/user/webroot:/var/www -e SERVER_PASSWORD=ubuntu bylexus/apache-php:5.3.10
 ```
 
 * `-v [local path]:/var/www` maps the container's webroot to a local path
@@ -25,7 +30,7 @@ docker run -d -p 8080:80 -p 2022:22 -v /home/user/webroot:/var/www -e SERVER_PAS
 
 Installed packages
 -------------------
-* Ubuntu 12.04 Server (LTS), based on ubuntu:12.04 docker iamge
+* Ubuntu Server, based on ubuntu docker iamge
 * openssh-server
 * apache2
 * php5
