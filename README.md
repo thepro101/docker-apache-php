@@ -13,7 +13,7 @@ Usage
 ------
 
 ```
-docker run -d -P bylexus/docker-apache-php
+docker run -d -P bylexus/apache-php
 ```
 
 A bit more specific:
