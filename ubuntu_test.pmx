@@ -1,0 +1,10 @@
+---
+name: Ubuntu_test
+description: ''
+keywords: test
+type: Default
+documentation: ''
+images:
+- name: azukiapp_php-apache_latest
+  source: azukiapp/php-apache:latest
+  type: Default
